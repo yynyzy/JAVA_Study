@@ -1,4 +1,5 @@
-public class _this {
+package basic;
+public class this_ {
     /**
      * 1.this关键字可以用来访问本类的属性、方法、构造器
      * 2.this用于区分当前类的属性和局部变量

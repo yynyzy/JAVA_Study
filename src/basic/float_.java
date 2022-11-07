@@ -1,4 +1,4 @@
-public class _float {
+public class float_ {
     public static void main(String[] args) {
         //float num1 = 1.1;  //不行，float 默认为 double 类型8字节，float 为四字节，无法放进去所以报错。
         float num2 = 1.1F;

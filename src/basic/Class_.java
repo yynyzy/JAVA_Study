@@ -1,4 +1,5 @@
-public class _Class {
+package  basic;
+public class Class_ {
     public static void main(String[] args) {
         // 对象的属性：常量入堆，字符串入方法区-常量池
 

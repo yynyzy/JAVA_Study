@@ -1,4 +1,4 @@
-public class _Array {
+public class Array_ {
     public static void main(String[] args) {
         // # 数组的三种声明方式
         double a1[] = new double[5];
