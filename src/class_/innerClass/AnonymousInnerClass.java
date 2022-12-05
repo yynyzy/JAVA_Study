@@ -12,6 +12,19 @@ public class AnonymousInnerClass {
         *   }
         * */
         new Outer().method();
+
+
+        // ------- 实践 ------
+        f1(new IA() {   //简洁
+            @Override
+            public void cry() {
+                System.out.println("匿名内部类实践方法");
+            }
+        });
+    }
+
+    public static void f1(IA ia){
+        ia.cry();
     }
 }
 
