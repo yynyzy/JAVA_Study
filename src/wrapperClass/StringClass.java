@@ -2,7 +2,7 @@ package wrapperClass;
 
 public class StringClass {
     public static void main(String[] args) {
-        // 字符串的字符使用 Unicode 字符编码，一个字符占两个字节
+        /* 字符串的字符使用 Unicode 字符编码，一个字符占两个字节 */
         /* 常用的构造器
          *  String s1 = new String()
          *  String s2 = new String(String original);
@@ -14,5 +14,12 @@ public class StringClass {
          * String 的属性 private final char value[]; 用于存放字符串内容，value 是个 final 类型，地址不能吸烟、㝉，但是单个字符内容可以变化
          * */
 
+        /* String 的常用方法 */
+        int age = 10;
+        double score = 23.6;
+        String name = "yzy";
+        char gender = '男';
+        String info = String.format("姓名是%s,年龄是%d,成绩是%.2f，性别是%c",name,age,score,gender);
+        System.out.println("info="+info);
     }
 }
