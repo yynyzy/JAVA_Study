@@ -13,13 +13,13 @@ public class Collection_ {
         ArrayList arrayList = new ArrayList();
         arrayList.add("jack");
         arrayList.add("tom");
-
         new Collection_Methods().user_iterator(arrayList);
 
         HashMap hashMap = new HashMap();
         hashMap.put("N01","北京");
         hashMap.put("N02","上海");
     }
+
 }
 
 // Collection接口遍历元素方式
@@ -48,5 +48,6 @@ class Collection_Methods {
         for (Object s : arr){
             System.out.println("s="+ s);
         }
+
     }
 }
