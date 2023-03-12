@@ -1,4 +1,4 @@
-package io_;
+package io_.reader_;
 
 import org.junit.jupiter.api.Test;
 
@@ -14,7 +14,7 @@ public class FileReader_ {
 
     @Test
     public void m1 () {
-        String path = "C:\\Users\\maiscrm\\IdeaProjects\\JAVA_Study\\src\\main\\java\\yyn\\study\\io_\\test.txt";
+        String path = "C:\\Users\\maiscrm\\IdeaProjects\\JAVA_Study\\src\\main\\java\\io_\\test.txt";
         FileReader fr = null;
         int data = 0;
         try {

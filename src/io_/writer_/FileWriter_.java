@@ -1,4 +1,4 @@
-package io_;
+package io_.writer_;
 
 import org.junit.jupiter.api.Test;
 
@@ -11,7 +11,7 @@ public class FileWriter_ {
     }
     @Test
     public void m1(){
-       String path = "C:\\Users\\maiscrm\\IdeaProjects\\JAVA_Study\\src\\main\\java\\yyn\\study\\io_\\test2.txt";
+       String path = "C:\\Users\\maiscrm\\IdeaProjects\\JAVA_Study\\src\\main\\java\\io_\\test2.txt";
         FileWriter fileWriter = null;
         char[] chars = new char[]{'y', 'y', 'n'};
         try {

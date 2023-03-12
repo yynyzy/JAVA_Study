@@ -1,4 +1,4 @@
-package io_;
+package io_.inputStream_;
 
 import org.junit.jupiter.api.Test;
 
@@ -14,7 +14,7 @@ public class FileInputStream_ { // 字节流
     // 单个字节读取，效率低
     @Test
     public void readFile01() {
-        String filePath = "C:\\Users\\maiscrm\\IdeaProjects\\JAVA_Study\\src\\main\\java\\yyn\\study\\io_\\test.txt";
+        String filePath = "C:\\Users\\maiscrm\\IdeaProjects\\JAVA_Study\\src\\main\\java\\io_\\test.txt";
         FileInputStream fileInputStream = null;
         int readData = 0;
         try {
@@ -41,7 +41,7 @@ public class FileInputStream_ { // 字节流
     // 单个字节读取，效率低
     @Test
     public void readFile02() {
-        String filePath = "C:\\Users\\maiscrm\\IdeaProjects\\JAVA_Study\\src\\main\\java\\yyn\\study\\io_\\test.txt";
+        String filePath = "C:\\Users\\maiscrm\\IdeaProjects\\JAVA_Study\\src\\main\\java\\io_\\test.txt";
         FileInputStream fileInputStream = null;
         byte[] buf = new byte[8]; // 一次读8个字节
         int bufLen = 0;

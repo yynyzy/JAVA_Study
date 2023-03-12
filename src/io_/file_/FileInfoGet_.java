@@ -1,4 +1,4 @@
-package io_;
+package io_.file_;
 
 import org.junit.jupiter.api.Test;
 
@@ -12,7 +12,7 @@ public class FileInfoGet_ {
     @Test
     public void getInfo() {
         //先创建文件对象
-        File file = new File("C:\\Users\\maiscrm\\IdeaProjects\\JAVA_Study\\src\\main\\java\\yyn\\study\\io_\\test.txt");
+        File file = new File("C:\\Users\\maiscrm\\IdeaProjects\\JAVA_Study\\src\\main\\java\\io_\\test.txt");
 //调用相应的方法，得到对应信息
         System.out.println("文件名字=" + file.getName());
         System.out.println("文件绝对路径=" + file.getAbsolutePath());

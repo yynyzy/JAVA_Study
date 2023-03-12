@@ -1,4 +1,4 @@
-package io_;
+package io_.file_;
 
 import org.junit.jupiter.api.Test;
 
@@ -13,7 +13,7 @@ public class Directory_ {
 
     @Test
     public void deleteFile() {
-        String path = "C:\\Users\\maiscrm\\IdeaProjects\\JAVA_Study\\src\\main\\java\\yyn\\study\\io_\\myFile02.txt";
+        String path = "C:\\Users\\maiscrm\\IdeaProjects\\JAVA_Study\\src\\main\\java\\io_\\myFile02.txt";
         File file = new File(path);
         if (file.exists()) {
             file.delete();

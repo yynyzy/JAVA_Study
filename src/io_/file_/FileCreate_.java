@@ -1,4 +1,4 @@
-package io_;
+package io_.file_;
 
 import org.junit.jupiter.api.Test;
 
@@ -19,7 +19,7 @@ public class FileCreate_ {
 
     @Test
     public void createFile1() {
-        File file01 = new File("C:\\Users\\maiscrm\\IdeaProjects\\JAVA_Study\\src\\main\\java\\yyn\\study\\io_\\myFile01.txt");
+        File file01 = new File("C:\\Users\\maiscrm\\IdeaProjects\\JAVA_Study\\src\\main\\java\\io_\\myFile01.txt");
         try {
             file01.createNewFile();
             System.out.println("创建成功~");
@@ -32,7 +32,7 @@ public class FileCreate_ {
 
     @Test
     public void createFile2() {
-        File parentFile = new File("C:\\Users\\maiscrm\\IdeaProjects\\JAVA_Study\\src\\main\\java\\yyn\\study\\io_");
+        File parentFile = new File("C:\\Users\\maiscrm\\IdeaProjects\\JAVA_Study\\src\\main\\java\\io_");
         String filename = "myFile02.txt";
         File file = new File(parentFile, filename);
         try {
@@ -47,7 +47,7 @@ public class FileCreate_ {
 
     @Test
     public void createFile3() {
-        String parentFile = "C:\\Users\\maiscrm\\IdeaProjects\\JAVA_Study\\src\\main\\java\\yyn\\study\\io_";
+        String parentFile = "C:\\Users\\maiscrm\\IdeaProjects\\JAVA_Study\\src\\main\\java\\io_";
         String filename = "myFile03.txt";
         File file = new File(parentFile, filename);
         try {

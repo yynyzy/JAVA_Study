@@ -1,4 +1,4 @@
-package io_;
+package io_.outputStream_;
 
 import org.junit.jupiter.api.Test;
 
@@ -14,7 +14,7 @@ public class FileOutputStream_ {
 
     @Test
     public void m1 () {
-        String path = "C:\\Users\\maiscrm\\IdeaProjects\\JAVA_Study\\src\\main\\java\\yyn\\study\\io_\\test2.txt";
+        String path = "C:\\Users\\maiscrm\\IdeaProjects\\JAVA_Study\\src\\main\\java\\io_\\test2.txt";
         FileOutputStream file = null;
         try {
 //            1.new FileOutputstream(filePath)创建方式，当写入内容是，会覆盖原来的内容
