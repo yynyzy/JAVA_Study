@@ -1,6 +1,5 @@
 package io_;
 
-import org.junit.jupiter.api.Test;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -10,7 +9,6 @@ public class FileCopy_ {
     public static void main(String[] args) {
 
     }
-@Test
     public void fileCopy() {
         String targetFilePath = "C:\\Users\\maiscrm\\Desktop\\优诺美rolex.png";
         String destFilePath = "C:\\Users\\maiscrm\\Pictures\\Saved Pictures";

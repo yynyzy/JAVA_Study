@@ -1,6 +1,5 @@
 package io_.file_;
 
-import org.junit.jupiter.api.Test;
 
 import java.io.File;
 
@@ -11,7 +10,6 @@ public class Directory_ {
 
     // 文件存在则删除文件
 
-    @Test
     public void deleteFile() {
         String path = "C:\\Users\\maiscrm\\IdeaProjects\\JAVA_Study\\src\\main\\java\\io_\\myFile02.txt";
         File file = new File(path);
@@ -24,8 +22,6 @@ public class Directory_ {
     }
 
     // 判断 目录是否存在，如果存在就删除，否则就示不存在
-
-    @Test
     public void m2() {
         String directoryPath = "C:\\Users\\maiscrm\\IdeaProjects\\JAVA_Study\\src\\main\\java\\yyn\\study\\io_\\test2";
         File file = new File(directoryPath);
@@ -43,7 +39,6 @@ public class Directory_ {
 
     // 判断 目录是否存在，如果存在就提示已经存在，否则就创建 test2
 
-    @Test
     public void m3() {
         String directoryPath = "C:\\Users\\maiscrm\\IdeaProjects\\JAVA_Study\\src\\main\\java\\yyn\\study\\io_\\test2";
         File file = new File(directoryPath);

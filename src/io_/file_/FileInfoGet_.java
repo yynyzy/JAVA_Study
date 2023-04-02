@@ -1,7 +1,5 @@
 package io_.file_;
 
-import org.junit.jupiter.api.Test;
-
 import java.io.File;
 
 public class FileInfoGet_ {
@@ -9,7 +7,6 @@ public class FileInfoGet_ {
 
     }
 
-    @Test
     public void getInfo() {
         //先创建文件对象
         File file = new File("C:\\Users\\maiscrm\\IdeaProjects\\JAVA_Study\\src\\main\\java\\io_\\test.txt");

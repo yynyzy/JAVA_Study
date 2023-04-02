@@ -1,6 +1,5 @@
 package io_.inputStream_;
 
-import org.junit.jupiter.api.Test;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -12,7 +11,7 @@ public class FileInputStream_ { // 字节流
     }
 
     // 单个字节读取，效率低
-    @Test
+
     public void readFile01() {
         String filePath = "C:\\Users\\maiscrm\\IdeaProjects\\JAVA_Study\\src\\main\\java\\io_\\test.txt";
         FileInputStream fileInputStream = null;
@@ -39,7 +38,6 @@ public class FileInputStream_ { // 字节流
     }
 
     // 单个字节读取，效率低
-    @Test
     public void readFile02() {
         String filePath = "C:\\Users\\maiscrm\\IdeaProjects\\JAVA_Study\\src\\main\\java\\io_\\test.txt";
         FileInputStream fileInputStream = null;

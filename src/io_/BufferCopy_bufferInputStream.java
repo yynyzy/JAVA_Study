@@ -1,6 +1,5 @@
 package io_;
 
-import org.junit.jupiter.api.Test;
 
 import java.io.*;
 
@@ -10,7 +9,6 @@ public class BufferCopy_bufferInputStream {
     }
 
     // 按字符流, 不可以处理二进制文件
-    @Test
     public void m1() {
         String targetPath = "C:\\Users\\maiscrm\\IdeaProjects\\JAVA_Study\\src\\main\\java\\yyn\\study\\io_\\FileReader_.java";
         String destinePath = "C:\\Users\\maiscrm\\IdeaProjects\\JAVA_Study\\src\\main\\java\\yyn\\study\\io_\\FileReader_Copy.java";
@@ -42,7 +40,6 @@ public class BufferCopy_bufferInputStream {
     }
 
     // 按字节流
-    @Test
     public void m2() {
         String srcPath = "C:\\Users\\maiscrm\\Desktop\\优诺能-蕴荟-内3.7.png";
         String destPath = "C:\\Users\\maiscrm\\Desktop\\copytest.png";

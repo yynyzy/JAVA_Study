@@ -1,6 +1,5 @@
 package io_.reader_;
 
-import org.junit.jupiter.api.Test;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -12,7 +11,6 @@ public class BufferedReader_ {
         new BufferedReader_().bufRead();
     }
 
-    @Test
     public void bufRead() throws Exception {
         String path = "C:\\Users\\maiscrm\\IdeaProjects\\JAVA_Study\\src\\main\\java\\io_\\FileReader_.java";
         BufferedReader bufferedReader = new BufferedReader(new FileReader(path));

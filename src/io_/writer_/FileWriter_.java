@@ -1,7 +1,5 @@
 package io_.writer_;
 
-import org.junit.jupiter.api.Test;
-
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -9,7 +7,6 @@ public class FileWriter_ {
     public static void main(String[] args) {
 
     }
-    @Test
     public void m1(){
        String path = "C:\\Users\\maiscrm\\IdeaProjects\\JAVA_Study\\src\\main\\java\\io_\\test2.txt";
         FileWriter fileWriter = null;

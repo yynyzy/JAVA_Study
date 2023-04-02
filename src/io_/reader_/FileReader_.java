@@ -1,6 +1,5 @@
 package io_.reader_;
 
-import org.junit.jupiter.api.Test;
 
 import java.io.FileOutputStream;
 import java.io.FileReader;
@@ -12,7 +11,6 @@ public class FileReader_ {
 
     }
 
-    @Test
     public void m1 () {
         String path = "C:\\Users\\maiscrm\\IdeaProjects\\JAVA_Study\\src\\main\\java\\io_\\test.txt";
         FileReader fr = null;
@@ -37,7 +35,6 @@ public class FileReader_ {
         }
     }
 
-    @Test
     public void m2 () {
         String path = "C:\\Users\\maiscrm\\IdeaProjects\\JAVA_Study\\src\\main\\java\\yyn\\study\\io_\\test.txt";
         FileReader fr = null;

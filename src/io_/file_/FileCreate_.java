@@ -1,6 +1,5 @@
 package io_.file_;
 
-import org.junit.jupiter.api.Test;
 
 import java.io.File;
 import java.io.IOException;
@@ -17,7 +16,6 @@ public class FileCreate_ {
 
 // 方式1： new File(String pathname) 根据路径构建一个File对象
 
-    @Test
     public void createFile1() {
         File file01 = new File("C:\\Users\\maiscrm\\IdeaProjects\\JAVA_Study\\src\\main\\java\\io_\\myFile01.txt");
         try {
@@ -30,7 +28,6 @@ public class FileCreate_ {
 
     // 方式2： new File(File parent,String child)   根据父目录文件+子路径构建
 
-    @Test
     public void createFile2() {
         File parentFile = new File("C:\\Users\\maiscrm\\IdeaProjects\\JAVA_Study\\src\\main\\java\\io_");
         String filename = "myFile02.txt";
@@ -45,7 +42,6 @@ public class FileCreate_ {
 
     // 方式3： new File(String parent,String child)   根据父目录+子路径构建
 
-    @Test
     public void createFile3() {
         String parentFile = "C:\\Users\\maiscrm\\IdeaProjects\\JAVA_Study\\src\\main\\java\\io_";
         String filename = "myFile03.txt";

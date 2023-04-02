@@ -1,7 +1,5 @@
 package io_.outputStream_;
 
-import org.junit.jupiter.api.Test;
-
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -12,7 +10,6 @@ public class FileOutputStream_ {
 
     }
 
-    @Test
     public void m1 () {
         String path = "C:\\Users\\maiscrm\\IdeaProjects\\JAVA_Study\\src\\main\\java\\io_\\test2.txt";
         FileOutputStream file = null;
