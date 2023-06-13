@@ -1,4 +1,4 @@
-package firstStageExercise;
+package ExerciseProject.firstStageExercise;
 
 public class testPocketMoney {
     public static void main(String[] args) {
