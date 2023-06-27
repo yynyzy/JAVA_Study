@@ -17,7 +17,7 @@ public class MyPanel_ extends JPanel implements KeyListener, Runnable{
     Image image2 = null;
     Image image3 = null;
     public MyPanel_() {
-        this.myTank = new MyTank(100,100);
+        this.myTank = new MyTank(700,100);
         for (int i = 0; i < enemyTankSize; i++) {
             EnemyTank et = new EnemyTank((i+1) * 100, 0);
             et.setDirect(2);
@@ -38,7 +38,9 @@ public class MyPanel_ extends JPanel implements KeyListener, Runnable{
     public void paint(Graphics g) {
         super.paint(g);
         g.fillRect(0,0,1000,750);
-        drawTank(myTank.getX(), myTank.getY(), g, myTank.getDirect(), 1);
+        if(myTank != null && myTank.isLive){
+            drawTank(myTank.getX(), myTank.getY(), g, myTank.getDirect(), 1);
+        }
 
         if ( myTank.shot != null && myTank.shot.isLive) {
             g.draw3DRect(myTank.shot.x, myTank.shot.y, 1,1,false);
@@ -126,8 +128,16 @@ public class MyPanel_ extends JPanel implements KeyListener, Runnable{
         }
     }
 
+    public void hitEnemy() {
+        if (myTank.shot != null && myTank.shot.isLive ) {
+            for (int i = 0; i < enemyTanks.size(); i++) {
+                EnemyTank enemyTank = enemyTanks.get(i);
+                hitTank(myTank.shot, enemyTank);
+            }
+        }
+    }
 
-    public void hitTank(Shot shot, EnemyTank enemyTank) {
+    public void hitTank(Shot shot, Tank enemyTank) {
         if(shot != null && shot.isLive) {
             switch (enemyTank.getDirect()){
                 case 0:
@@ -150,6 +160,18 @@ public class MyPanel_ extends JPanel implements KeyListener, Runnable{
                         Bomb bomb = new Bomb(enemyTank.getX(), enemyTank.getY());
                         bombs.add(bomb);
                     }
+            }
+        }
+    }
+    public void hitHero() {
+
+        for (int i = 0; i < enemyTanks.size(); i++) {
+            EnemyTank enemyTank = enemyTanks.get(i);
+            for (int j = 0; j < enemyTank.enemyShots.size(); j++) {
+                Shot shot = enemyTank.enemyShots.get(j);
+                if (shot.isLive && myTank.isLive) {
+                        hitTank(shot, myTank);
+                }
             }
         }
     }
@@ -203,12 +225,8 @@ public class MyPanel_ extends JPanel implements KeyListener, Runnable{
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-            if(myTank.shot != null && myTank.shot.isLive ) {
-                for (int i = 0; i < enemyTanks.size(); i++) {
-                    EnemyTank enemyTank = enemyTanks.get(i);
-                    hitTank(myTank.shot, enemyTank);
-                }
-            }
+            hitEnemy();
+            hitHero();
             this.repaint();
         }
     }
